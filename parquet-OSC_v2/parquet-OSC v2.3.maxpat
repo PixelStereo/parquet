@@ -58,7 +58,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 449.0, 94.0, 100.0, 22.0 ],
-					"presentation_rect" : [ 449.0, 54.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "loadmess path"
 				}
@@ -88,7 +87,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 85.645325, 2.0, 37.0, 20.0 ],
 					"style" : "",
-					"text" : "v 2.2"
+					"text" : "v 2.3"
 				}
 
 			}
@@ -425,7 +424,7 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -465,6 +464,34 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-70",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 375.369537, 6.623047, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-12",
+									"index" : 2,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 419.145782, 9.123047, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-23",
 									"maxclass" : "newobj",
@@ -2219,20 +2246,6 @@
 							}
 , 							{
 								"box" : 								{
-									"comment" : "",
-									"id" : "obj-70",
-									"index" : 1,
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 375.369537, 9.123047, 30.0, 30.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-14",
 									"maxclass" : "comment",
@@ -3719,6 +3732,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-33", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3931,15 +3953,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-23", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-70", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-33", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3968,7 +3981,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 218.0, 124.0, 79.0, 22.0 ],
+					"patching_rect" : [ 218.0, 166.0, 79.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4035,7 +4048,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-1", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-8", 1 ]
@@ -4053,194 +4066,194 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-34::obj-2" : [ "pow[1]", "pow", 0 ],
-			"obj-29::obj-2" : [ "pow[9]", "pow", 0 ],
-			"obj-34::obj-1" : [ "active[2]", "active", 0 ],
-			"obj-29::obj-15" : [ "remove[19]", "remove", 0 ],
-			"obj-33::obj-15" : [ "remove[7]", "remove", 0 ],
-			"obj-28::obj-155" : [ "live.menu[10]", "live.menu", 0 ],
-			"obj-33::obj-23" : [ "remove[6]", "remove", 0 ],
-			"obj-28::obj-18" : [ "release[10]", "release", 0 ],
-			"obj-36::obj-155" : [ "live.menu", "live.menu", 0 ],
-			"obj-33::obj-2" : [ "pow[3]", "pow", 0 ],
-			"obj-28::obj-48" : [ "test[10]", "test", 0 ],
-			"obj-32::obj-31" : [ "mapmin[4]", "min", 0 ],
-			"obj-27::obj-15" : [ "remove[23]", "remove", 0 ],
-			"obj-32::obj-42" : [ "mapsustain[4]", "sustain", 0 ],
-			"obj-27::obj-31" : [ "mapmin[11]", "min", 0 ],
-			"obj-35::obj-20" : [ "max mapping[2]", "max", 0 ],
-			"obj-31::obj-15" : [ "remove[11]", "remove", 0 ],
-			"obj-26::obj-1" : [ "active[8]", "active", 0 ],
-			"obj-35::obj-31" : [ "mapmin[2]", "min", 0 ],
-			"obj-31::obj-23" : [ "remove[10]", "remove", 0 ],
-			"obj-26::obj-15" : [ "remove[15]", "remove", 0 ],
-			"obj-36::obj-45" : [ "mapdelay", "delay", 0 ],
-			"obj-34::obj-155" : [ "live.menu[1]", "live.menu", 0 ],
-			"obj-30::obj-48" : [ "test[6]", "test", 0 ],
-			"obj-26::obj-42" : [ "mapsustain[7]", "sustain", 0 ],
-			"obj-30::obj-15" : [ "remove[13]", "remove", 0 ],
-			"obj-25::obj-18" : [ "release[8]", "release", 0 ],
-			"obj-30::obj-155" : [ "live.menu[6]", "live.menu", 0 ],
-			"obj-25::obj-14" : [ "coef[8]", "coef", 0 ],
 			"obj-34::obj-15" : [ "remove[3]", "remove", 0 ],
-			"obj-29::obj-42" : [ "mapsustain[9]", "sustain", 0 ],
-			"obj-34::obj-45" : [ "mapdelay[1]", "delay", 0 ],
-			"obj-29::obj-48" : [ "test[9]", "test", 0 ],
-			"obj-33::obj-14" : [ "coef[3]", "coef", 0 ],
-			"obj-28::obj-2" : [ "pow[10]", "pow", 0 ],
-			"obj-33::obj-42" : [ "mapsustain[3]", "sustain", 0 ],
-			"obj-28::obj-42" : [ "mapsustain[10]", "sustain", 0 ],
-			"obj-32::obj-1" : [ "active[5]", "active", 0 ],
-			"obj-28::obj-20" : [ "max mapping[10]", "max", 0 ],
-			"obj-32::obj-14" : [ "coef[4]", "coef", 0 ],
-			"obj-27::obj-23" : [ "remove[22]", "remove", 0 ],
-			"obj-32::obj-155" : [ "live.menu[4]", "live.menu", 0 ],
-			"obj-27::obj-20" : [ "max mapping[11]", "max", 0 ],
-			"obj-35::obj-14" : [ "coef[2]", "coef", 0 ],
-			"obj-31::obj-18" : [ "release[5]", "release", 0 ],
-			"obj-26::obj-155" : [ "live.menu[7]", "live.menu", 0 ],
-			"obj-35::obj-2" : [ "pow[2]", "pow", 0 ],
-			"obj-31::obj-31" : [ "mapmin[5]", "min", 0 ],
-			"obj-26::obj-14" : [ "coef[7]", "coef", 0 ],
-			"obj-34::obj-20" : [ "max mapping[1]", "max", 0 ],
-			"obj-30::obj-18" : [ "release[6]", "release", 0 ],
-			"obj-25::obj-31" : [ "mapmin[8]", "min", 0 ],
-			"obj-30::obj-20" : [ "max mapping[6]", "max", 0 ],
-			"obj-25::obj-23" : [ "remove[16]", "remove", 0 ],
-			"obj-30::obj-14" : [ "coef[6]", "coef", 0 ],
-			"obj-25::obj-2" : [ "pow[8]", "pow", 0 ],
-			"obj-34::obj-14" : [ "coef[1]", "coef", 0 ],
-			"obj-29::obj-31" : [ "mapmin[9]", "min", 0 ],
-			"obj-34::obj-42" : [ "mapsustain[1]", "sustain", 0 ],
-			"obj-29::obj-23" : [ "remove[18]", "remove", 0 ],
-			"obj-33::obj-18" : [ "release[3]", "release", 0 ],
-			"obj-28::obj-31" : [ "mapmin[10]", "min", 0 ],
-			"obj-33::obj-1" : [ "active[4]", "active", 0 ],
-			"obj-28::obj-45" : [ "mapdelay[10]", "delay", 0 ],
-			"obj-36::obj-15" : [ "remove", "remove", 0 ],
+			"obj-29::obj-2" : [ "pow[9]", "pow", 0 ],
 			"obj-36::obj-14" : [ "coef", "coef", 0 ],
-			"obj-32::obj-15" : [ "remove[9]", "remove", 0 ],
-			"obj-27::obj-155" : [ "live.menu[11]", "live.menu", 0 ],
-			"obj-32::obj-48" : [ "test[4]", "test", 0 ],
-			"obj-27::obj-18" : [ "release[11]", "release", 0 ],
-			"obj-36::obj-31" : [ "mapmin", "min", 0 ],
-			"obj-32::obj-45" : [ "mapdelay[4]", "delay", 0 ],
-			"obj-27::obj-45" : [ "mapdelay[11]", "delay", 0 ],
-			"obj-35::obj-18" : [ "release[2]", "release", 0 ],
-			"obj-31::obj-48" : [ "test[5]", "test", 0 ],
-			"obj-26::obj-48" : [ "test[7]", "test", 0 ],
-			"obj-13::obj-25" : [ "recallduration", "recallduration", 0 ],
-			"obj-36::obj-1" : [ "active", "active", 0 ],
-			"obj-35::obj-155" : [ "live.menu[2]", "live.menu", 0 ],
-			"obj-31::obj-1" : [ "active[6]", "active", 0 ],
-			"obj-26::obj-18" : [ "release[7]", "release", 0 ],
-			"obj-30::obj-45" : [ "mapdelay[6]", "delay", 0 ],
-			"obj-25::obj-45" : [ "mapdelay[8]", "delay", 0 ],
-			"obj-30::obj-2" : [ "pow[6]", "pow", 0 ],
-			"obj-25::obj-15" : [ "remove[17]", "remove", 0 ],
-			"obj-36::obj-18" : [ "release", "release", 0 ],
-			"obj-36::obj-42" : [ "mapsustain", "sustain", 0 ],
-			"obj-29::obj-45" : [ "mapdelay[9]", "delay", 0 ],
-			"obj-25::obj-155" : [ "live.menu[8]", "live.menu", 0 ],
-			"obj-36::obj-2" : [ "pow", "pow", 0 ],
-			"obj-34::obj-23" : [ "remove[2]", "remove", 0 ],
-			"obj-29::obj-20" : [ "max mapping[9]", "max", 0 ],
-			"obj-13::obj-49" : [ "active[1]", "active", 0 ],
-			"obj-34::obj-31" : [ "mapmin[1]", "min", 0 ],
+			"obj-33::obj-1" : [ "active[4]", "active", 0 ],
 			"obj-29::obj-155" : [ "live.menu[9]", "live.menu", 0 ],
-			"obj-33::obj-45" : [ "mapdelay[3]", "delay", 0 ],
-			"obj-28::obj-14" : [ "coef[10]", "coef", 0 ],
-			"obj-33::obj-20" : [ "max mapping[3]", "max", 0 ],
-			"obj-28::obj-15" : [ "remove[21]", "remove", 0 ],
-			"obj-32::obj-20" : [ "max mapping[4]", "max", 0 ],
-			"obj-27::obj-1" : [ "active[12]", "active", 0 ],
-			"obj-32::obj-2" : [ "pow[4]", "pow", 0 ],
-			"obj-27::obj-14" : [ "coef[11]", "coef", 0 ],
-			"obj-36::obj-20" : [ "max mapping", "max", 0 ],
-			"obj-35::obj-23" : [ "remove[4]", "remove", 0 ],
-			"obj-31::obj-2" : [ "pow[5]", "pow", 0 ],
-			"obj-27::obj-42" : [ "mapsustain[11]", "sustain", 0 ],
-			"obj-35::obj-48" : [ "test[2]", "test", 0 ],
-			"obj-31::obj-42" : [ "mapsustain[5]", "sustain", 0 ],
-			"obj-26::obj-31" : [ "mapmin[7]", "min", 0 ],
-			"obj-35::obj-45" : [ "mapdelay[2]", "delay", 0 ],
-			"obj-31::obj-155" : [ "live.menu[5]", "live.menu", 0 ],
-			"obj-26::obj-2" : [ "pow[7]", "pow", 0 ],
-			"obj-13::obj-3" : [ "active[18]", "active", 0 ],
-			"obj-30::obj-23" : [ "remove[12]", "remove", 0 ],
-			"obj-25::obj-42" : [ "mapsustain[8]", "sustain", 0 ],
-			"obj-30::obj-31" : [ "mapmin[6]", "min", 0 ],
-			"obj-25::obj-20" : [ "max mapping[8]", "max", 0 ],
-			"obj-34::obj-18" : [ "release[1]", "release", 0 ],
-			"obj-29::obj-1" : [ "active[10]", "active", 0 ],
-			"obj-34::obj-48" : [ "test[1]", "test", 0 ],
-			"obj-29::obj-18" : [ "release[9]", "release", 0 ],
-			"obj-36::obj-48" : [ "test", "test", 0 ],
-			"obj-33::obj-155" : [ "live.menu[3]", "live.menu", 0 ],
-			"obj-29::obj-14" : [ "coef[9]", "coef", 0 ],
-			"obj-33::obj-48" : [ "test[3]", "test", 0 ],
+			"obj-33::obj-23" : [ "remove[6]", "remove", 0 ],
 			"obj-28::obj-23" : [ "remove[20]", "remove", 0 ],
-			"obj-36::obj-23" : [ "remove[1]", "remove", 0 ],
-			"obj-33::obj-31" : [ "mapmin[3]", "min", 0 ],
-			"obj-28::obj-1" : [ "active[11]", "active", 0 ],
-			"obj-32::obj-23" : [ "remove[8]", "remove", 0 ],
-			"obj-27::obj-48" : [ "test[11]", "test", 0 ],
+			"obj-33::obj-14" : [ "coef[3]", "coef", 0 ],
+			"obj-28::obj-45" : [ "mapdelay[10]", "delay", 0 ],
+			"obj-32::obj-1" : [ "active[5]", "active", 0 ],
+			"obj-27::obj-20" : [ "max mapping[11]", "max", 0 ],
+			"obj-36::obj-20" : [ "max mapping", "max", 0 ],
 			"obj-32::obj-18" : [ "release[4]", "release", 0 ],
-			"obj-27::obj-2" : [ "pow[11]", "pow", 0 ],
-			"obj-35::obj-42" : [ "mapsustain[2]", "sustain", 0 ],
-			"obj-31::obj-45" : [ "mapdelay[5]", "delay", 0 ],
-			"obj-26::obj-23" : [ "remove[14]", "remove", 0 ],
-			"obj-35::obj-1" : [ "active[3]", "active", 0 ],
-			"obj-31::obj-20" : [ "max mapping[5]", "max", 0 ],
-			"obj-26::obj-20" : [ "max mapping[7]", "max", 0 ],
-			"obj-35::obj-15" : [ "remove[5]", "remove", 0 ],
-			"obj-31::obj-14" : [ "coef[5]", "coef", 0 ],
+			"obj-27::obj-45" : [ "mapdelay[11]", "delay", 0 ],
+			"obj-36::obj-48" : [ "test", "test", 0 ],
+			"obj-31::obj-18" : [ "release[5]", "release", 0 ],
 			"obj-26::obj-45" : [ "mapdelay[7]", "delay", 0 ],
+			"obj-31::obj-155" : [ "live.menu[5]", "live.menu", 0 ],
+			"obj-26::obj-23" : [ "remove[14]", "remove", 0 ],
+			"obj-35::obj-15" : [ "remove[5]", "remove", 0 ],
+			"obj-31::obj-31" : [ "mapmin[5]", "min", 0 ],
+			"obj-26::obj-15" : [ "remove[15]", "remove", 0 ],
+			"obj-35::obj-31" : [ "mapmin[2]", "min", 0 ],
+			"obj-30::obj-18" : [ "release[6]", "release", 0 ],
+			"obj-25::obj-1" : [ "active[9]", "active", 0 ],
+			"obj-13::obj-3" : [ "active[18]", "active", 0 ],
+			"obj-35::obj-18" : [ "release[2]", "release", 0 ],
 			"obj-30::obj-1" : [ "active[7]", "active", 0 ],
 			"obj-25::obj-48" : [ "test[8]", "test", 0 ],
+			"obj-34::obj-1" : [ "active[2]", "active", 0 ],
+			"obj-29::obj-15" : [ "remove[19]", "remove", 0 ],
+			"obj-34::obj-42" : [ "mapsustain[1]", "sustain", 0 ],
+			"obj-29::obj-1" : [ "active[10]", "active", 0 ],
+			"obj-33::obj-155" : [ "live.menu[3]", "live.menu", 0 ],
+			"obj-28::obj-42" : [ "mapsustain[10]", "sustain", 0 ],
+			"obj-33::obj-15" : [ "remove[7]", "remove", 0 ],
+			"obj-28::obj-48" : [ "test[10]", "test", 0 ],
+			"obj-33::obj-31" : [ "mapmin[3]", "min", 0 ],
+			"obj-28::obj-2" : [ "pow[10]", "pow", 0 ],
+			"obj-32::obj-20" : [ "max mapping[4]", "max", 0 ],
+			"obj-27::obj-48" : [ "test[11]", "test", 0 ],
+			"obj-32::obj-155" : [ "live.menu[4]", "live.menu", 0 ],
+			"obj-27::obj-2" : [ "pow[11]", "pow", 0 ],
+			"obj-31::obj-23" : [ "remove[10]", "remove", 0 ],
+			"obj-26::obj-1" : [ "active[8]", "active", 0 ],
+			"obj-36::obj-45" : [ "mapdelay", "delay", 0 ],
+			"obj-31::obj-1" : [ "active[6]", "active", 0 ],
+			"obj-26::obj-48" : [ "test[7]", "test", 0 ],
+			"obj-13::obj-25" : [ "recallduration", "recallduration", 0 ],
+			"obj-35::obj-48" : [ "test[2]", "test", 0 ],
+			"obj-30::obj-14" : [ "coef[6]", "coef", 0 ],
+			"obj-26::obj-20" : [ "max mapping[7]", "max", 0 ],
+			"obj-35::obj-20" : [ "max mapping[2]", "max", 0 ],
+			"obj-30::obj-20" : [ "max mapping[6]", "max", 0 ],
+			"obj-25::obj-45" : [ "mapdelay[8]", "delay", 0 ],
+			"obj-36::obj-155" : [ "live.menu", "live.menu", 0 ],
+			"obj-35::obj-1" : [ "active[3]", "active", 0 ],
+			"obj-30::obj-155" : [ "live.menu[6]", "live.menu", 0 ],
+			"obj-25::obj-31" : [ "mapmin[8]", "min", 0 ],
+			"obj-34::obj-20" : [ "max mapping[1]", "max", 0 ],
+			"obj-29::obj-20" : [ "max mapping[9]", "max", 0 ],
+			"obj-34::obj-18" : [ "release[1]", "release", 0 ],
+			"obj-29::obj-18" : [ "release[9]", "release", 0 ],
+			"obj-33::obj-42" : [ "mapsustain[3]", "sustain", 0 ],
+			"obj-28::obj-18" : [ "release[10]", "release", 0 ],
+			"obj-33::obj-20" : [ "max mapping[3]", "max", 0 ],
+			"obj-28::obj-15" : [ "remove[21]", "remove", 0 ],
+			"obj-32::obj-31" : [ "mapmin[4]", "min", 0 ],
+			"obj-28::obj-1" : [ "active[11]", "active", 0 ],
+			"obj-32::obj-45" : [ "mapdelay[4]", "delay", 0 ],
+			"obj-27::obj-18" : [ "release[11]", "release", 0 ],
+			"obj-32::obj-48" : [ "test[4]", "test", 0 ],
+			"obj-27::obj-14" : [ "coef[11]", "coef", 0 ],
+			"obj-31::obj-20" : [ "max mapping[5]", "max", 0 ],
+			"obj-26::obj-2" : [ "pow[7]", "pow", 0 ],
+			"obj-31::obj-15" : [ "remove[11]", "remove", 0 ],
+			"obj-26::obj-42" : [ "mapsustain[7]", "sustain", 0 ],
+			"obj-35::obj-155" : [ "live.menu[2]", "live.menu", 0 ],
+			"obj-30::obj-45" : [ "mapdelay[6]", "delay", 0 ],
+			"obj-25::obj-20" : [ "max mapping[8]", "max", 0 ],
+			"obj-35::obj-42" : [ "mapsustain[2]", "sustain", 0 ],
+			"obj-30::obj-31" : [ "mapmin[6]", "min", 0 ],
+			"obj-25::obj-155" : [ "live.menu[8]", "live.menu", 0 ],
+			"obj-34::obj-23" : [ "remove[2]", "remove", 0 ],
 			"obj-30::obj-42" : [ "mapsustain[6]", "sustain", 0 ],
-			"obj-25::obj-1" : [ "active[9]", "active", 0 ]
+			"obj-25::obj-15" : [ "remove[17]", "remove", 0 ],
+			"obj-34::obj-155" : [ "live.menu[1]", "live.menu", 0 ],
+			"obj-29::obj-14" : [ "coef[9]", "coef", 0 ],
+			"obj-34::obj-48" : [ "test[1]", "test", 0 ],
+			"obj-29::obj-45" : [ "mapdelay[9]", "delay", 0 ],
+			"obj-13::obj-49" : [ "active[1]", "active", 0 ],
+			"obj-36::obj-2" : [ "pow", "pow", 0 ],
+			"obj-33::obj-2" : [ "pow[3]", "pow", 0 ],
+			"obj-28::obj-155" : [ "live.menu[10]", "live.menu", 0 ],
+			"obj-33::obj-18" : [ "release[3]", "release", 0 ],
+			"obj-28::obj-14" : [ "coef[10]", "coef", 0 ],
+			"obj-32::obj-14" : [ "coef[4]", "coef", 0 ],
+			"obj-27::obj-23" : [ "remove[22]", "remove", 0 ],
+			"obj-32::obj-2" : [ "pow[4]", "pow", 0 ],
+			"obj-27::obj-42" : [ "mapsustain[11]", "sustain", 0 ],
+			"obj-36::obj-31" : [ "mapmin", "min", 0 ],
+			"obj-32::obj-42" : [ "mapsustain[4]", "sustain", 0 ],
+			"obj-27::obj-155" : [ "live.menu[11]", "live.menu", 0 ],
+			"obj-31::obj-14" : [ "coef[5]", "coef", 0 ],
+			"obj-26::obj-14" : [ "coef[7]", "coef", 0 ],
+			"obj-36::obj-15" : [ "remove", "remove", 0 ],
+			"obj-31::obj-2" : [ "pow[5]", "pow", 0 ],
+			"obj-26::obj-18" : [ "release[7]", "release", 0 ],
+			"obj-35::obj-23" : [ "remove[4]", "remove", 0 ],
+			"obj-30::obj-23" : [ "remove[12]", "remove", 0 ],
+			"obj-25::obj-18" : [ "release[8]", "release", 0 ],
+			"obj-35::obj-2" : [ "pow[2]", "pow", 0 ],
+			"obj-30::obj-48" : [ "test[6]", "test", 0 ],
+			"obj-25::obj-2" : [ "pow[8]", "pow", 0 ],
+			"obj-34::obj-14" : [ "coef[1]", "coef", 0 ],
+			"obj-29::obj-48" : [ "test[9]", "test", 0 ],
+			"obj-25::obj-14" : [ "coef[8]", "coef", 0 ],
+			"obj-34::obj-31" : [ "mapmin[1]", "min", 0 ],
+			"obj-29::obj-31" : [ "mapmin[9]", "min", 0 ],
+			"obj-34::obj-45" : [ "mapdelay[1]", "delay", 0 ],
+			"obj-29::obj-23" : [ "remove[18]", "remove", 0 ],
+			"obj-33::obj-45" : [ "mapdelay[3]", "delay", 0 ],
+			"obj-28::obj-31" : [ "mapmin[10]", "min", 0 ],
+			"obj-33::obj-48" : [ "test[3]", "test", 0 ],
+			"obj-28::obj-20" : [ "max mapping[10]", "max", 0 ],
+			"obj-32::obj-23" : [ "remove[8]", "remove", 0 ],
+			"obj-27::obj-1" : [ "active[12]", "active", 0 ],
+			"obj-36::obj-23" : [ "remove[1]", "remove", 0 ],
+			"obj-36::obj-18" : [ "release", "release", 0 ],
+			"obj-32::obj-15" : [ "remove[9]", "remove", 0 ],
+			"obj-27::obj-15" : [ "remove[23]", "remove", 0 ],
+			"obj-36::obj-1" : [ "active", "active", 0 ],
+			"obj-31::obj-42" : [ "mapsustain[5]", "sustain", 0 ],
+			"obj-27::obj-31" : [ "mapmin[11]", "min", 0 ],
+			"obj-31::obj-48" : [ "test[5]", "test", 0 ],
+			"obj-26::obj-31" : [ "mapmin[7]", "min", 0 ],
+			"obj-31::obj-45" : [ "mapdelay[5]", "delay", 0 ],
+			"obj-26::obj-155" : [ "live.menu[7]", "live.menu", 0 ],
+			"obj-35::obj-45" : [ "mapdelay[2]", "delay", 0 ],
+			"obj-30::obj-15" : [ "remove[13]", "remove", 0 ],
+			"obj-25::obj-42" : [ "mapsustain[8]", "sustain", 0 ],
+			"obj-36::obj-42" : [ "mapsustain", "sustain", 0 ],
+			"obj-35::obj-14" : [ "coef[2]", "coef", 0 ],
+			"obj-30::obj-2" : [ "pow[6]", "pow", 0 ],
+			"obj-25::obj-23" : [ "remove[16]", "remove", 0 ],
+			"obj-34::obj-2" : [ "pow[1]", "pow", 0 ],
+			"obj-29::obj-42" : [ "mapsustain[9]", "sustain", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "app_manager.maxpat",
-				"bootpath" : "~/GITs/parquet/parquet-OSC_v2/parquet-lib_v2",
+				"bootpath" : "~/GITs/parquet-analyz/parquet-OSC_v2/parquet-lib_v2",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pxst.param.maxpat",
-				"bootpath" : "~/GITs/parquet/parquet-OSC_v2/parquet-lib_v2",
+				"bootpath" : "~/GITs/parquet-analyz/parquet-OSC_v2/parquet-lib_v2",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "data-slide-and-send.maxpat",
-				"bootpath" : "~/GITs/parquet/parquet-OSC_v2/parquet-lib_v2",
+				"bootpath" : "~/GITs/parquet-analyz/parquet-OSC_v2/parquet-lib_v2",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "data_process.maxpat",
-				"bootpath" : "~/GITs/parquet/parquet-OSC_v2/parquet-lib_v2",
+				"bootpath" : "~/GITs/parquet-analyz/parquet-OSC_v2/parquet-lib_v2",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pxst.param_dict.maxpat",
-				"bootpath" : "~/GITs/parquet/parquet-OSC_v2/parquet-lib_v2",
+				"bootpath" : "~/GITs/parquet-analyz/parquet-OSC_v2/parquet-lib_v2",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "data-viewer.maxpat",
-				"bootpath" : "~/GITs/parquet/parquet-OSC_v2/parquet-lib_v2",
+				"bootpath" : "~/GITs/parquet-analyz/parquet-OSC_v2/parquet-lib_v2",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pxst.var.maxpat",
-				"bootpath" : "~/GITs/parquet/parquet-OSC_v2/parquet-lib_v2",
+				"bootpath" : "~/GITs/parquet-analyz/parquet-OSC_v2/parquet-lib_v2",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4252,7 +4265,7 @@
 			}
 , 			{
 				"name" : "data-recall.maxpat",
-				"bootpath" : "~/GITs/parquet/parquet-OSC_v2/parquet-lib_v2",
+				"bootpath" : "~/GITs/parquet-analyz/parquet-OSC_v2/parquet-lib_v2",
 				"type" : "JSON",
 				"implicit" : 1
 			}
