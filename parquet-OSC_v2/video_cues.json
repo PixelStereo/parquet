@@ -14,7 +14,7 @@
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
@@ -32,7 +32,7 @@
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
@@ -46,36 +46,16 @@
 ,
 		"kick" : 		{
 			"map" : 			{
-				"/douche/drums/opacity" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
-,
-				"kick/snake" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
-,
-				"/kick" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
 
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
 			"coef" : 1,
-			"active" : 1,
+			"active" : 0,
 			"pow" : 1,
 			"sustain" : 150,
 			"delay" : 0,
@@ -84,33 +64,20 @@
 ,
 		"snare" : 		{
 			"map" : 			{
-				"snake/turn" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
-,
-				"/snare" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
 
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
 			"coef" : 1,
-			"active" : 1,
+			"active" : 0,
 			"pow" : 1,
 			"sustain" : 150,
 			"delay" : 0,
-			"filter" : 4
+			"filter" : 1
 		}
 ,
 		"snare2" : 		{
@@ -119,7 +86,7 @@
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
@@ -137,7 +104,7 @@
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
@@ -155,7 +122,7 @@
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
@@ -169,29 +136,16 @@
 ,
 		"bass" : 		{
 			"map" : 			{
-				"/douche/bass/opacity" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
-,
-				"/bass" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
 
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
 			"coef" : 1,
-			"active" : 1,
+			"active" : 0,
 			"pow" : 1,
 			"sustain" : 150,
 			"delay" : 0,
@@ -200,30 +154,17 @@
 ,
 		"guit.1" : 		{
 			"map" : 			{
-				"/douche/guit.1/opacity" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
-,
-				"/guit.1" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
 
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
-			"coef" : 2.141732,
-			"active" : 1,
-			"pow" : 6.456693,
+			"coef" : 1,
+			"active" : 0,
+			"pow" : 1,
 			"sustain" : 150,
 			"delay" : 0,
 			"filter" : 1
@@ -231,30 +172,17 @@
 ,
 		"guit.2" : 		{
 			"map" : 			{
-				"/douche/guit.2/opacity" : 				{
-					"min" : 0,
-					"max" : 2,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
-,
-				"/guit.2" : 				{
-					"min" : 0,
-					"max" : 2,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
 
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
-			"coef" : 3.401575,
-			"active" : 1,
-			"pow" : 5.677165,
+			"coef" : 1,
+			"active" : 0,
+			"pow" : 1,
 			"sustain" : 150,
 			"delay" : 0,
 			"filter" : 1
@@ -262,29 +190,16 @@
 ,
 		"synth" : 		{
 			"map" : 			{
-				"/douche/synth/opacity" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
-,
-				"/synth" : 				{
-					"min" : 0,
-					"max" : 1,
-					"sustain" : 0.2,
-					"delay" : 0
-				}
 
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
-			"coef" : 10.0,
-			"active" : 1,
+			"coef" : 1,
+			"active" : 0,
 			"pow" : 1,
 			"sustain" : 150,
 			"delay" : 0,
@@ -297,7 +212,7 @@
 			}
 ,
 			"slide" : 			{
-				"off" : 11.0
+				"off" : 1
 			}
 ,
 			"unique" : 1,
@@ -4994,6 +4909,13 @@
 					"sustain" : 0.2,
 					"delay" : 0
 				}
+,
+				"/par/drums" : 				{
+					"min" : 0,
+					"max" : 1,
+					"sustain" : 0.2,
+					"delay" : 0
+				}
 
 			}
 ,
@@ -5110,6 +5032,13 @@
 					"sustain" : 0.2,
 					"delay" : 0
 				}
+,
+				"/par/synth" : 				{
+					"min" : 0,
+					"max" : 255,
+					"sustain" : 0.2,
+					"delay" : 0
+				}
 
 			}
 ,
@@ -5148,6 +5077,13 @@
 					"sustain" : 0.2,
 					"delay" : 0
 				}
+,
+				"/par/guit.1" : 				{
+					"min" : 0,
+					"max" : 1,
+					"sustain" : 0.2,
+					"delay" : 0
+				}
 
 			}
 ,
@@ -5174,6 +5110,13 @@
 				}
 ,
 				"/douche/guit.2/opacity" : 				{
+					"min" : 0,
+					"max" : 2,
+					"sustain" : 0.2,
+					"delay" : 0
+				}
+,
+				"/par/guit.2" : 				{
 					"min" : 0,
 					"max" : 2,
 					"sustain" : 0.2,
@@ -9181,6 +9124,13 @@
 					"sustain" : 0.2,
 					"delay" : 0
 				}
+,
+				"/par/drums" : 				{
+					"min" : 0,
+					"max" : 1,
+					"sustain" : 0.2,
+					"delay" : 0
+				}
 
 			}
 ,
@@ -9304,6 +9254,20 @@
 					"sustain" : 0.2,
 					"delay" : 0
 				}
+,
+				"/par/bass" : 				{
+					"min" : 0,
+					"max" : 1,
+					"sustain" : 0.2,
+					"delay" : 0
+				}
+,
+				"/par/synth" : 				{
+					"min" : 0,
+					"max" : 1,
+					"sustain" : 0.2,
+					"delay" : 0
+				}
 
 			}
 ,
@@ -9342,6 +9306,13 @@
 					"sustain" : 0.2,
 					"delay" : 0
 				}
+,
+				"/par/guit.1" : 				{
+					"min" : 0,
+					"max" : 255,
+					"sustain" : 0.2,
+					"delay" : 0
+				}
 
 			}
 ,
@@ -9368,6 +9339,13 @@
 				}
 ,
 				"guit.2" : 				{
+					"min" : 0,
+					"max" : 2,
+					"sustain" : 0.2,
+					"delay" : 0
+				}
+,
+				"/par/guit.2" : 				{
 					"min" : 0,
 					"max" : 2,
 					"sustain" : 0.2,
